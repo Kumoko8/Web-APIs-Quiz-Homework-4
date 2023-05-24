@@ -105,7 +105,7 @@ question5CRight.on('click', function () {
 question5DWrong.on('click', function () {
     alert('Hello World');
   });
-//Next Question and Begin Quiz button
+//Next Questions and Begin Quiz button
 
 var beginQuiz = $("#begin-quiz");
 
@@ -115,7 +115,7 @@ beginQuiz.on('click', function () {
   )
   });
 
-var nextQuestion = $("#next-question");
+var nextQuestion1 = $("#next-question-1");
 
 
 nextQuestion.on('click', function () {
@@ -124,7 +124,38 @@ nextQuestion.on('click', function () {
   )
   });
 
+  var nextQuestion2 = $("#next-question-2");
+  
+  nextQuestion.on('click', function () {
+    window.location.assign(
+      "./quiz-question1.html"
+    )
+    });
 
+  var nextQuestion3 = $("#next-question-3");
+
+  nextQuestion.on('click', function () {
+    window.location.assign(
+      "./quiz-question1.html"
+    )
+    });
+  var nextQuestion4 = $("#next-question-4");
+
+  nextQuestion.on('click', function () {
+    window.location.assign(
+      "./quiz-question1.html"
+    )
+    });
+
+//Complete Quiz button
+
+var completeQuiz = $("#complete-quiz");
+
+completeQuiz.on('click', function () {
+  window.location.assign(
+    "./quiz-question1.html"
+  )
+  });
 
  
 
