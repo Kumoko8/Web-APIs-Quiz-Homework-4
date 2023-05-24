@@ -3,11 +3,21 @@ var question1AWrong = $("#q1-A-w");
 var question1BRight= $("#q1-B-R");
 var question1CWrong = $("#q1-C-W");
 var question1DWrong = $("#q1-D-W");
+//Need to make next question button for each page
+//Need to figure out how to make one question appear at a time
+//Need to calculate score for all correct answers
+//Need to make timers
+//Need to make timer subtract 10 seconds when wrong answer is clicked
+//Need to make high score list (local storage)
+//Need to make name initials input
+//Need to stylize and format it
 
 //Question 1
 
 question1AWrong.on('click', function () {
-    alert('Hello World');
+  window.location.assign(
+    "./quiz-question1.html"
+  )
   });
 
 question1BRight.on('click', function () {
@@ -95,11 +105,24 @@ question5CRight.on('click', function () {
 question5DWrong.on('click', function () {
     alert('Hello World');
   });
+//Next Question and Begin Quiz button
+
+var beginQuiz = $("#begin-quiz");
+
+beginQuiz.on('click', function () {
+  window.location.assign(
+    "./quiz-questions.html"
+  )
+  });
+
+var nextQuestion = $("#next-question");
 
 
-
-
-  
+nextQuestion.on('click', function () {
+  window.location.assign(
+    "./quiz-question1.html"
+  )
+  });
 
 
 
