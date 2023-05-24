@@ -3,8 +3,8 @@ var question1AWrong = $("#q1-A-w");
 var question1BRight= $("#q1-B-R");
 var question1CWrong = $("#q1-C-W");
 var question1DWrong = $("#q1-D-W");
-//Need to make next question button for each page
-//Need to figure out how to make one question appear at a time
+//check!//Need to make next question button for each page
+//check!//Need to figure out how to make one question appear at a time
 //Need to calculate score for all correct answers
 //Need to make timers
 //Need to make timer subtract 10 seconds when wrong answer is clicked
@@ -140,24 +140,30 @@ nextQuestion1.on('click', function () {
   var nextQuestion2 = $("#next-question-2");
   
   nextQuestion2.on('click', function () {
-    window.location.assign(
-      "./quiz-question1.html"
-    )
+    var showQuestion3 = $(".question-3");
+    showQuestion3.show();
+  var hideQuestion2 = $(".question-2");
+    hideQuestion2.hide();
+    
     });
 
   var nextQuestion3 = $("#next-question-3");
 
   nextQuestion3.on('click', function () {
-    window.location.assign(
-      "./quiz-question1.html"
-    )
+    var showQuestion4 = $(".question-4");
+    showQuestion4.show();
+  var hideQuestion3 = $(".question-3");
+    hideQuestion3.hide();
+    
     });
   var nextQuestion4 = $("#next-question-4");
 
   nextQuestion4.on('click', function () {
-    window.location.assign(
-      "./quiz-question1.html"
-    )
+    var showQuestion5 = $(".question-5");
+    showQuestion5.show();
+  var hideQuestion4 = $(".question-4");
+    hideQuestion4.hide();
+    
     });
 
 //Complete Quiz button
