@@ -108,6 +108,18 @@ question5DWrong.on('click', function () {
 //Next Questions and Begin Quiz button
 
 var beginQuiz = $("#begin-quiz");
+var hideQuestion2 = $(".question-2");
+var hideQuestion3 = $(".question-3");
+var hideQuestion4 = $(".question-4");
+var hideQuestion5 = $(".question-5");
+
+hideQuestion2.hide();
+
+hideQuestion3.hide();
+  
+hideQuestion4.hide();
+
+hideQuestion5.hide();
 
 beginQuiz.on('click', function () {
   window.location.assign(
@@ -118,15 +130,16 @@ beginQuiz.on('click', function () {
 var nextQuestion1 = $("#next-question-1");
 
 
-nextQuestion.on('click', function () {
-  window.location.assign(
-    "./quiz-question1.html"
-  )
+nextQuestion1.on('click', function () {
+  var showQuestion2 = $(".question-2");
+    showQuestion2.show();
+  var hideQuestion1 = $(".question-1");
+    hideQuestion1.hide();
   });
 
   var nextQuestion2 = $("#next-question-2");
   
-  nextQuestion.on('click', function () {
+  nextQuestion2.on('click', function () {
     window.location.assign(
       "./quiz-question1.html"
     )
@@ -134,14 +147,14 @@ nextQuestion.on('click', function () {
 
   var nextQuestion3 = $("#next-question-3");
 
-  nextQuestion.on('click', function () {
+  nextQuestion3.on('click', function () {
     window.location.assign(
       "./quiz-question1.html"
     )
     });
   var nextQuestion4 = $("#next-question-4");
 
-  nextQuestion.on('click', function () {
+  nextQuestion4.on('click', function () {
     window.location.assign(
       "./quiz-question1.html"
     )
