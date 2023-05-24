@@ -1,98 +1,107 @@
 //Make variable for buttons for listeners
-var question1AWrong = document.querySelector("#q1-A-w");
-var question1BRight= document.querySelector("#q1-B-R");
-var question1CWrong = document.querySelector("#q1-C-W");
-var question1DWrong = document.querySelector("#q1-D-W");
+var question1AWrong = $("#q1-A-w");
+var question1BRight= $("#q1-B-R");
+var question1CWrong = $("#q1-C-W");
+var question1DWrong = $("#q1-D-W");
 
-var question2AWrong = document.querySelector("#q2-A-w");
-var question2BWrong= document.querySelector("#q2-B-W");
-var question2CRight = document.querySelector("#q2-C-R");
-var question2DWrong = document.querySelector("#q2-D-W");
-
-var question3ARight = document.querySelector("#q3-A-R");
-var question3BWrong= document.querySelector("#q3-B-W");
-var question3CWrong = document.querySelector("#q3-C-W");
-var question3DWrong = document.querySelector("#q3-D-W");
-
-var question4ARight = document.querySelector("#q4-A-R");
-var question4BWrong= document.querySelector("#q4-B-W");
-var question4CWrong = document.querySelector("#q4-C-W");
-var question4DWrong = document.querySelector("#q4-D-W");
-
-var question5AWrong = document.querySelector("#q5-A-w");
-var question5BWrong= document.querySelector("#q5-B-W");
-var question5CRight = document.querySelector("#q5-C-R");
-var question5DWrong = document.querySelector("#q5-D-W");
-
-//Make event listeners for all buttons
 //Question 1
-alertButtonEl.on('click', function () {
-    alert('Hello World');
-  });
-alertButtonEl.on('click', function () {
-    alert('Hello World');
-  });
-alertButtonEl.on('click', function () {
-    alert('Hello World');
-  });
-alertButtonEl.on('click', function () {
+
+question1AWrong.on('click', function () {
     alert('Hello World');
   });
 
+question1BRight.on('click', function () {
+    alert('Hello World');
+  });
+question1CWrong.on('click', function () {
+    alert('Hello World');
+  });
+question1DWrong.on('click', function () {
+    alert('Hello World');
+  });
+
+var question2AWrong = $("#q2-A-w");
+var question2BWrong= $("#q2-B-W");
+var question2CRight = $("#q2-C-R");
+var question2DWrong = $("#q2-D-W");
 //Question 2
-alertButtonEl.on('click', function () {
+question2AWrong.on('click', function () {
     alert('Hello World');
   });
-alertButtonEl.on('click', function () {
+question2BWrong.on('click', function () {
     alert('Hello World');
   });
-alertButtonEl.on('click', function () {
+question2CRight.on('click', function () {
     alert('Hello World');
   });
-alertButtonEl.on('click', function () {
+question2DWrong.on('click', function () {
     alert('Hello World');
   });
-
-  //Question 3
-alertButtonEl.on('click', function () {
+var question3ARight = $("#q3-A-R");
+var question3BWrong= $("#q3-B-W");
+var question3CWrong = $("#q3-C-W");
+var question3DWrong = $("#q3-D-W");
+  
+//Question 3
+question3ARight.on('click', function () {
     alert('Hello World');
   });
-alertButtonEl.on('click', function () {
+question3BWrong.on('click', function () {
     alert('Hello World');
   });
-alertButtonEl.on('click', function () {
+question3CWrong.on('click', function () {
     alert('Hello World');
   });
-alertButtonEl.on('click', function () {
+question3DWrong.on('click', function () {
     alert('Hello World');
   });
 
   //Question 4
+var question4ARight = $("#q4-A-R");
+var question4BWrong= $("#q4-B-W");
+var question4CWrong = $("#q4-C-W");
+var question4DWrong = $("#q4-D-W");
 
-alertButtonEl.on('click', function () {
+question4ARight.on('click', function () {
     alert('Hello World');
   });
-alertButtonEl.on('click', function () {
+question4BWrong.on('click', function () {
     alert('Hello World');
   });
-alertButtonEl.on('click', function () {
+question4CWrong.on('click', function () {
     alert('Hello World');
   });
-alertButtonEl.on('click', function () {
+question4DWrong.on('click', function () {
     alert('Hello World');
   });
 
-  //Question 5
+ //Question 5
+var question5AWrong = $("#q5-A-w");
+var question5BWrong= $("#q5-B-W");
+var question5CRight = $("#q5-C-R");
+var question5DWrong = $("#q5-D-W");
 
-alertButtonEl.on('click', function () {
+//Make event listeners for all buttons
+
+question5AWrong.on('click', function () {
     alert('Hello World');
   });
-alertButtonEl.on('click', function () {
+question5BWrong.on('click', function () {
     alert('Hello World');
   });
-alertButtonEl.on('click', function () {
+question5CRight.on('click', function () {
     alert('Hello World');
   });
-alertButtonEl.on('click', function () {
+question5DWrong.on('click', function () {
     alert('Hello World');
   });
+
+
+
+
+  
+
+
+
+ 
+

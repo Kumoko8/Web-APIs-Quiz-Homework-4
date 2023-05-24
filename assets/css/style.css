@@ -6,3 +6,7 @@
 
 /* hey this is a comment in */
 
+ol button {
+    display: flex;
+    display: block;
+}
