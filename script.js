@@ -11,7 +11,7 @@ var question1DWrong = $("#q1-D-W");
 //
 //check!//Need to calculate score for all correct answers
 //check!//Need to make timers
-//Need to make timer subtract 10 seconds when wrong answer is clicked
+//check!//Need to make timer subtract 10 seconds when wrong answer is clicked
 //check!//Need to make high score list (local storage)
 //Need to make name initials input
 //Need to stylize and format it
@@ -43,18 +43,33 @@ setTime();
 
 question1AWrong.on('click', function () {
    timeLeft = timeLeft - 10;
-  
+  var showQuestion2 = $(".question-2");
+   showQuestion2.show();
+  var hideQuestion1 = $(".question-1");
+   hideQuestion1.hide();
 });
 
 question1BRight.on('click', function () {
     scoreAmount = scoreAmount + 20;
+    var showQuestion2 = $(".question-2");
+   showQuestion2.show();
+  var hideQuestion1 = $(".question-1");
+   hideQuestion1.hide();
 //keep track of score add to each correct answer
   });
 question1CWrong.on('click', function () {
   timeLeft = timeLeft - 10;
+  var showQuestion2 = $(".question-2");
+   showQuestion2.show();
+  var hideQuestion1 = $(".question-1");
+   hideQuestion1.hide();
   });
 question1DWrong.on('click', function () {
   timeLeft = timeLeft - 10;
+  var showQuestion2 = $(".question-2");
+   showQuestion2.show();
+  var hideQuestion1 = $(".question-1");
+   hideQuestion1.hide();
   });
 
 var question2AWrong = $("#q2-A-w");
@@ -64,15 +79,31 @@ var question2DWrong = $("#q2-D-W");
 //Question 2
 question2AWrong.on('click', function () {
   timeLeft = timeLeft - 10;
+  var showQuestion3 = $(".question-3");
+    showQuestion3.show();
+  var hideQuestion2 = $(".question-2");
+    hideQuestion2.hide();
   });
 question2BWrong.on('click', function () {
   timeLeft = timeLeft - 10;
+  var showQuestion3 = $(".question-3");
+    showQuestion3.show();
+  var hideQuestion2 = $(".question-2");
+    hideQuestion2.hide();
   });
 question2CRight.on('click', function () {
     scoreAmount = scoreAmount + 20;
+    var showQuestion3 = $(".question-3");
+    showQuestion3.show();
+  var hideQuestion2 = $(".question-2");
+    hideQuestion2.hide();
   });
 question2DWrong.on('click', function () {
   timeLeft = timeLeft - 10;
+  var showQuestion3 = $(".question-3");
+    showQuestion3.show();
+  var hideQuestion2 = $(".question-2");
+    hideQuestion2.hide();
   });
 var question3ARight = $("#q3-A-R");
 var question3BWrong= $("#q3-B-W");
@@ -82,15 +113,31 @@ var question3DWrong = $("#q3-D-W");
 //Question 3
 question3ARight.on('click', function () {
     scoreAmount = scoreAmount + 20;
+    var showQuestion4 = $(".question-4");
+    showQuestion4.show();
+  var hideQuestion3 = $(".question-3");
+    hideQuestion3.hide();
   });
 question3BWrong.on('click', function () {
   timeLeft = timeLeft - 10;
+  var showQuestion4 = $(".question-4");
+    showQuestion4.show();
+  var hideQuestion3 = $(".question-3");
+    hideQuestion3.hide();
   });
 question3CWrong.on('click', function () {
   timeLeft = timeLeft - 10;
+  var showQuestion4 = $(".question-4");
+    showQuestion4.show();
+  var hideQuestion3 = $(".question-3");
+    hideQuestion3.hide();
   });
 question3DWrong.on('click', function () {
   timeLeft = timeLeft - 10;
+  var showQuestion4 = $(".question-4");
+    showQuestion4.show();
+  var hideQuestion3 = $(".question-3");
+    hideQuestion3.hide();
   });
 
   //Question 4
@@ -101,15 +148,31 @@ var question4DWrong = $("#q4-D-W");
 
 question4ARight.on('click', function () {
     scoreAmount = scoreAmount + 20;
+    var showQuestion5 = $(".question-5");
+    showQuestion5.show();
+  var hideQuestion4 = $(".question-4");
+    hideQuestion4.hide();
   });
 question4BWrong.on('click', function () {
   timeLeft = timeLeft - 10;
+  var showQuestion5 = $(".question-5");
+    showQuestion5.show();
+  var hideQuestion4 = $(".question-4");
+    hideQuestion4.hide();
   });
 question4CWrong.on('click', function () {
   timeLeft = timeLeft - 10;
+  var showQuestion5 = $(".question-5");
+    showQuestion5.show();
+  var hideQuestion4 = $(".question-4");
+    hideQuestion4.hide();
   });
 question4DWrong.on('click', function () {
   timeLeft = timeLeft - 10;
+  var showQuestion5 = $(".question-5");
+    showQuestion5.show();
+  var hideQuestion4 = $(".question-4");
+    hideQuestion4.hide();
   });
 
 
@@ -124,15 +187,22 @@ var question5DWrong = $("#q5-D-W");
 
 question5AWrong.on('click', function () {
   timeLeft = timeLeft - 10;
+  alert ("Thank you for taking this quiz! Please submit to see your score!");
   });
 question5BWrong.on('click', function () {
   timeLeft = timeLeft - 10;
+  alert ("Thank you for taking this quiz! Please submit to see your score!");
+
   });
 question5CRight.on('click', function () {
     scoreAmount = scoreAmount + 20;
+    alert ("Thank you for taking this quiz! Please submit to see your score!");
+
   });
 question5DWrong.on('click', function () {
   timeLeft = timeLeft - 10;
+  alert ("Thank you for taking this quiz! Please submit to see your score!");
+
   });
 
 
@@ -158,51 +228,13 @@ beginQuiz.on('click', function () {
   )
   });
 
-var nextQuestion1 = $("#next-question-1");
-
-
-nextQuestion1.on('click', function () {
-  var showQuestion2 = $(".question-2");
-    showQuestion2.show();
-  var hideQuestion1 = $(".question-1");
-    hideQuestion1.hide();
-  });
-
-  var nextQuestion2 = $("#next-question-2");
-  
-  nextQuestion2.on('click', function () {
-    var showQuestion3 = $(".question-3");
-    showQuestion3.show();
-  var hideQuestion2 = $(".question-2");
-    hideQuestion2.hide();
-    
-    });
-
-  var nextQuestion3 = $("#next-question-3");
-
-  nextQuestion3.on('click', function () {
-    var showQuestion4 = $(".question-4");
-    showQuestion4.show();
-  var hideQuestion3 = $(".question-3");
-    hideQuestion3.hide();
-    
-    });
-  var nextQuestion4 = $("#next-question-4");
-
-  nextQuestion4.on('click', function () {
-    var showQuestion5 = $(".question-5");
-    showQuestion5.show();
-  var hideQuestion4 = $(".question-4");
-    hideQuestion4.hide();
-    
-    });
 var displayScoreList = $("#high-score-list")
 displayScoreList.hide();
 //Complete Quiz button
 
-var completeQuiz = $("#complete-quiz");
+var submitQuiz = $("#submit-quiz");
 
-completeQuiz.on('click', function () {
+submitQuiz.on('click', function () {
   var displayScore = $("#high-score")
   displayScore.text(scoreAmount);
   displayScoreList.show();
