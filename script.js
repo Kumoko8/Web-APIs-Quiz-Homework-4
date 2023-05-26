@@ -1,3 +1,6 @@
+var scoreAmount = 0;
+//display this variable to the high score list
+
 //Make variable for buttons for listeners
 var question1AWrong = $("#q1-A-w");
 var question1BRight= $("#q1-B-R");
@@ -5,6 +8,7 @@ var question1CWrong = $("#q1-C-W");
 var question1DWrong = $("#q1-D-W");
 //check!//Need to make next question button for each page
 //check!//Need to figure out how to make one question appear at a time
+//
 //Need to calculate score for all correct answers
 //Need to make timers
 //Need to make timer subtract 10 seconds when wrong answer is clicked
@@ -21,7 +25,8 @@ question1AWrong.on('click', function () {
   });
 
 question1BRight.on('click', function () {
-    alert('Hello World');
+    scoreAmount = scoreAmount + 20;
+//keep track of score add to each correct answer
   });
 question1CWrong.on('click', function () {
     alert('Hello World');
@@ -42,7 +47,7 @@ question2BWrong.on('click', function () {
     alert('Hello World');
   });
 question2CRight.on('click', function () {
-    alert('Hello World');
+    scoreAmount = scoreAmount + 20;
   });
 question2DWrong.on('click', function () {
     alert('Hello World');
@@ -55,6 +60,7 @@ var question3DWrong = $("#q3-D-W");
 //Question 3
 question3ARight.on('click', function () {
     alert('Hello World');
+    scoreAmount = scoreAmount + 20;
   });
 question3BWrong.on('click', function () {
     alert('Hello World');
@@ -74,6 +80,7 @@ var question4DWrong = $("#q4-D-W");
 
 question4ARight.on('click', function () {
     alert('Hello World');
+    scoreAmount = scoreAmount + 20;
   });
 question4BWrong.on('click', function () {
     alert('Hello World');
@@ -101,6 +108,7 @@ question5BWrong.on('click', function () {
   });
 question5CRight.on('click', function () {
     alert('Hello World');
+    scoreAmount = scoreAmount + 20;
   });
 question5DWrong.on('click', function () {
     alert('Hello World');
@@ -178,3 +186,5 @@ completeQuiz.on('click', function () {
 
  
 
+//make a global variable starting at 0 that adds 1 for each correct answer
+//
