@@ -10,7 +10,7 @@ var question1DWrong = $("#q1-D-W");
 //check!//Need to figure out how to make one question appear at a time
 //
 //check!//Need to calculate score for all correct answers
-//Need to make timers
+//check!//Need to make timers
 //Need to make timer subtract 10 seconds when wrong answer is clicked
 //check!//Need to make high score list (local storage)
 //Need to make name initials input
@@ -42,7 +42,7 @@ setTime();
 //Question 1
 
 question1AWrong.on('click', function () {
-  
+   timeLeft = timeLeft - 10;
   
 });
 
@@ -51,10 +51,10 @@ question1BRight.on('click', function () {
 //keep track of score add to each correct answer
   });
 question1CWrong.on('click', function () {
-   
+  timeLeft = timeLeft - 10;
   });
 question1DWrong.on('click', function () {
-   
+  timeLeft = timeLeft - 10;
   });
 
 var question2AWrong = $("#q2-A-w");
@@ -63,16 +63,16 @@ var question2CRight = $("#q2-C-R");
 var question2DWrong = $("#q2-D-W");
 //Question 2
 question2AWrong.on('click', function () {
-    
+  timeLeft = timeLeft - 10;
   });
 question2BWrong.on('click', function () {
-    
+  timeLeft = timeLeft - 10;
   });
 question2CRight.on('click', function () {
     scoreAmount = scoreAmount + 20;
   });
 question2DWrong.on('click', function () {
-    
+  timeLeft = timeLeft - 10;
   });
 var question3ARight = $("#q3-A-R");
 var question3BWrong= $("#q3-B-W");
@@ -84,13 +84,13 @@ question3ARight.on('click', function () {
     scoreAmount = scoreAmount + 20;
   });
 question3BWrong.on('click', function () {
-    
+  timeLeft = timeLeft - 10;
   });
 question3CWrong.on('click', function () {
-    
+  timeLeft = timeLeft - 10;
   });
 question3DWrong.on('click', function () {
-    
+  timeLeft = timeLeft - 10;
   });
 
   //Question 4
@@ -103,13 +103,13 @@ question4ARight.on('click', function () {
     scoreAmount = scoreAmount + 20;
   });
 question4BWrong.on('click', function () {
-    
+  timeLeft = timeLeft - 10;
   });
 question4CWrong.on('click', function () {
-    
+  timeLeft = timeLeft - 10;
   });
 question4DWrong.on('click', function () {
-    
+  timeLeft = timeLeft - 10;
   });
 
 
@@ -123,16 +123,16 @@ var question5DWrong = $("#q5-D-W");
 //Make event listeners for all buttons
 
 question5AWrong.on('click', function () {
-    
+  timeLeft = timeLeft - 10;
   });
 question5BWrong.on('click', function () {
-    
+  timeLeft = timeLeft - 10;
   });
 question5CRight.on('click', function () {
     scoreAmount = scoreAmount + 20;
   });
 question5DWrong.on('click', function () {
-    
+  timeLeft = timeLeft - 10;
   });
 
 
