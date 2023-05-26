@@ -16,6 +16,7 @@ var question1DWrong = $("#q1-D-W");
 //Need to make name initials input
 //Need to stylize and format it
 
+
 //Question 1
 
 question1AWrong.on('click', function () {
@@ -106,7 +107,6 @@ question5BWrong.on('click', function () {
     alert('Hello World');
   });
 question5CRight.on('click', function () {
-    alert('Hello World');
     scoreAmount = scoreAmount + 20;
   });
 question5DWrong.on('click', function () {
@@ -174,7 +174,8 @@ nextQuestion1.on('click', function () {
     hideQuestion4.hide();
     
     });
-
+var displayScoreList = $("#high-score-list")
+displayScoreList.hide();
 //Complete Quiz button
 
 var completeQuiz = $("#complete-quiz");
@@ -182,12 +183,17 @@ var completeQuiz = $("#complete-quiz");
 completeQuiz.on('click', function () {
   var displayScore = $("#high-score")
   displayScore.text(scoreAmount);
-  $("high-score").append(scoreAmount);
-  displayScore.show();
+  displayScoreList.show();
   hideQuestion5.hide();
 
   });
+var returnBtn = $("#return-btn");
 
+returnBtn.on("click", function () {
+  window.location.assign(
+    "./index.html"
+  )
+})
  
 
 //make a global variable starting at 0 that adds 1 for each correct answer
