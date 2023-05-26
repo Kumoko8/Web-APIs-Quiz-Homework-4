@@ -19,11 +19,12 @@
     </section>
 
     <section id="high-score-list">
-        <p>High Scores</p>
-        <label for="initials">Enter your Initials&#402 - 3 letters$#41</label>
+        <p>High Scores</p>   <span id="high-score"> score </span>
+        <label for="initials">Enter your Initials &#40 2 - 3 letters &#41 </label>
         <input type="text" id="initials" name="initials"
         required minlength="2" maxlength="3">
-        <span id="high-score"> score </span>
+        <input type="button" onclick="storeScores()" value="Add Score">
+        
         <button id="return-btn"> Return </button>
     </section>
     

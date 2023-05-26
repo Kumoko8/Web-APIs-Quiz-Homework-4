@@ -36,6 +36,7 @@ function setTime () {
   }
   
   }, 1000);
+  return timerInterval;
 }
 setTime();
 
@@ -239,7 +240,8 @@ submitQuiz.on('click', function () {
   displayScore.text(scoreAmount);
   displayScoreList.show();
   hideQuestion5.hide();
-
+  localStorage.setItem(scoreAmount);
+    
   });
 var returnBtn = $("#return-btn");
 
@@ -248,5 +250,12 @@ returnBtn.on("click", function () {
     "./index.html"
   )
 })
- 
 
+function storeScores(){
+  var highScore = document.querySelector("#high-score");
+  var score = localStorage.getItem(scoreAmount);
+
+  highScore.textContent = scoreAmount;
+  
+ }
+storeScores();
