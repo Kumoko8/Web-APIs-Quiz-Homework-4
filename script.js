@@ -12,15 +12,37 @@ var question1DWrong = $("#q1-D-W");
 //check!//Need to calculate score for all correct answers
 //Need to make timers
 //Need to make timer subtract 10 seconds when wrong answer is clicked
-//Need to make high score list (local storage)
+//check!//Need to make high score list (local storage)
 //Need to make name initials input
 //Need to stylize and format it
 
+//Timer
+var timeEl = document.querySelector("#timer");
+
+var timeLeft = 100;
+
+function setTime () {
+  var timerInterval = setInterval(function() {
+    timeLeft--;
+    timeEl.textContent = " Time: " + timeLeft ;
+  
+
+  if(timeLeft === 0) {
+    clearInterval(timerInterval);
+    alert ("You have run out of time. Please try again!")
+    window.location.assign(
+      "./index.html"
+    )
+  }
+  
+  }, 1000);
+}
+setTime();
 
 //Question 1
 
 question1AWrong.on('click', function () {
-  alert("Thank You");
+  
   
 });
 
@@ -29,10 +51,10 @@ question1BRight.on('click', function () {
 //keep track of score add to each correct answer
   });
 question1CWrong.on('click', function () {
-    alert('Hello World');
+   
   });
 question1DWrong.on('click', function () {
-    alert('Hello World');
+   
   });
 
 var question2AWrong = $("#q2-A-w");
@@ -41,16 +63,16 @@ var question2CRight = $("#q2-C-R");
 var question2DWrong = $("#q2-D-W");
 //Question 2
 question2AWrong.on('click', function () {
-    alert('Hello World');
+    
   });
 question2BWrong.on('click', function () {
-    alert('Hello World');
+    
   });
 question2CRight.on('click', function () {
     scoreAmount = scoreAmount + 20;
   });
 question2DWrong.on('click', function () {
-    alert('Hello World');
+    
   });
 var question3ARight = $("#q3-A-R");
 var question3BWrong= $("#q3-B-W");
@@ -62,13 +84,13 @@ question3ARight.on('click', function () {
     scoreAmount = scoreAmount + 20;
   });
 question3BWrong.on('click', function () {
-    alert('Hello World');
+    
   });
 question3CWrong.on('click', function () {
-    alert('Hello World');
+    
   });
 question3DWrong.on('click', function () {
-    alert('Hello World');
+    
   });
 
   //Question 4
@@ -81,13 +103,13 @@ question4ARight.on('click', function () {
     scoreAmount = scoreAmount + 20;
   });
 question4BWrong.on('click', function () {
-    alert('Hello World');
+    
   });
 question4CWrong.on('click', function () {
-    alert('Hello World');
+    
   });
 question4DWrong.on('click', function () {
-    alert('Hello World');
+    
   });
 
 
@@ -101,16 +123,16 @@ var question5DWrong = $("#q5-D-W");
 //Make event listeners for all buttons
 
 question5AWrong.on('click', function () {
-    alert('Hello World');
+    
   });
 question5BWrong.on('click', function () {
-    alert('Hello World');
+    
   });
 question5CRight.on('click', function () {
     scoreAmount = scoreAmount + 20;
   });
 question5DWrong.on('click', function () {
-    alert('Hello World');
+    
   });
 
 
@@ -196,5 +218,3 @@ returnBtn.on("click", function () {
 })
  
 
-//make a global variable starting at 0 that adds 1 for each correct answer
-//
