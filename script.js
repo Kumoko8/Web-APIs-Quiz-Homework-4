@@ -9,7 +9,7 @@ var question1DWrong = $("#q1-D-W");
 //check!//Need to make next question button for each page
 //check!//Need to figure out how to make one question appear at a time
 //
-//Need to calculate score for all correct answers
+//check!//Need to calculate score for all correct answers
 //Need to make timers
 //Need to make timer subtract 10 seconds when wrong answer is clicked
 //Need to make high score list (local storage)
@@ -19,10 +19,9 @@ var question1DWrong = $("#q1-D-W");
 //Question 1
 
 question1AWrong.on('click', function () {
-  window.location.assign(
-    "./quiz-question1.html"
-  )
-  });
+  alert("Thank You");
+  
+});
 
 question1BRight.on('click', function () {
     scoreAmount = scoreAmount + 20;
@@ -59,7 +58,6 @@ var question3DWrong = $("#q3-D-W");
   
 //Question 3
 question3ARight.on('click', function () {
-    alert('Hello World');
     scoreAmount = scoreAmount + 20;
   });
 question3BWrong.on('click', function () {
@@ -79,7 +77,6 @@ var question4CWrong = $("#q4-C-W");
 var question4DWrong = $("#q4-D-W");
 
 question4ARight.on('click', function () {
-    alert('Hello World');
     scoreAmount = scoreAmount + 20;
   });
 question4BWrong.on('click', function () {
@@ -91,6 +88,8 @@ question4CWrong.on('click', function () {
 question4DWrong.on('click', function () {
     alert('Hello World');
   });
+
+
 
  //Question 5
 var question5AWrong = $("#q5-A-w");
@@ -113,6 +112,8 @@ question5CRight.on('click', function () {
 question5DWrong.on('click', function () {
     alert('Hello World');
   });
+
+
 //Next Questions and Begin Quiz button
 
 var beginQuiz = $("#begin-quiz");
@@ -179,9 +180,12 @@ nextQuestion1.on('click', function () {
 var completeQuiz = $("#complete-quiz");
 
 completeQuiz.on('click', function () {
-  window.location.assign(
-    "./quiz-question1.html"
-  )
+  var displayScore = $("#high-score")
+  displayScore.text(scoreAmount);
+  $("high-score").append(scoreAmount);
+  displayScore.show();
+  hideQuestion5.hide();
+
   });
 
  
